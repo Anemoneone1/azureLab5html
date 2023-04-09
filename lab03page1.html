@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+                <a href="https://eportal.pwr.edu.pl/">Eportal</a>
+                <a href="https://pwr.edu.pl/">Official PWR website</a>           
+        </nav>
+    </header>
+
+    <main>
+    <h1>Login page</h1>
+    <form action="example.com">
+    <p>
+        <input id="idName" name="Name" type="text" size="30" maxlength="70" pattern="[A-Za-z ]{3,}" autocomplete="on" placeholder="Mandatory" required autofocus>
+        <label> First and last name</label>
+    </p>
+
+    <p>
+        <input list="birthmonth" id="birthmonths" name="birthmonth" autocomplete="on">
+        <datalist id="birthmonth">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </datalist>
+        <label> Choose your month of birth</label>
+    </p>
+
+    <p>
+        <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="on" placeholder="Mandatory" required>
+        <label> Your email</label>
+    </p>
+
+    <p>
+        <input id="telId" name="tel" type="tel" pattern="+[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{3}" autocomplete="on">
+        <label> Your phone number</label>
+    </p>
+
+    <p>
+        <input id="date" name="date" type="date" autocomplete="on">
+        <label> Input your date of arrival</label>
+    </p> 
+
+    <p>
+        <input id="favColor" name="favColor" type="color" autocomplete="on">
+        <label> Choose your favourite color</label>
+    </p>
+
+    <p>
+        <input id="happinessLevel" name="happinessLevel" type="range" min="1" max="10" autocomplete="on">
+        <label> Happiness level</label>
+    </p>
+
+    <p>
+        <label><input name="languages" type="checkbox" value="English" checked="checked">English</label>
+        <label><input name="languages" type="checkbox" value="Polish" checked="checked">Polish</label>
+        <label><input name="languages" type="checkbox" value="German">German</label>
+        <label> --Choose languages you know</label>
+    </p>
+
+    <p>
+        <label><input name="edLevel" type="radio" value="None">None</label>
+        <label><input name="edLevel" type="radio" value="School">School</label>
+        <label><input name="edLevel" type="radio" value="Bachelor" checked="checked">Bachelor's degree</label>
+        <label><input name="edLevel" type="radio" value="Major">Major's degree</label>
+        <label> --Choose your education level</label>
+    </p>
+
+    <p>
+        <input id="url" name="url" type="url" autocomplete="on">
+        <label> url to your personal webpage</label>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </p>
+    </form>
+    </main>
+
+
+    <details>
+        <summary>A random nature fact</summary>
+        Plants have ways of communicating with each other. 
+        The scent of freshly cut grass is equivalent to a cry for help.
+    </details>
+        <aside>
+            <p>
+                Yes, that is a true fact
+            </p>
+        </aside>
+
+
+    <p>A mandatory meter <meter min="10" max="100" low="30" high="75" value="20">SampleText</meter>.</p>
+
+    <footer>
+        &copy; Andrii Papusha 257717
+    </footer>
+</body>
+</html>
